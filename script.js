@@ -9,13 +9,24 @@ function Hide(){
    menuhide.style.width=0;
    menuhide.style.right="-80px";
 }
-
- const imgArray = ["./images/background1.webp",
- "./images/background2.webp",
- "./images/background3.webp"]
+const imgArray = ["./images/background1.webp",
+"./images/background2.jpg",
+"./images/background3.jpg"];
+ var imgIndex = 0;
 
 function fun1(){
-   for(let i=0;i<3;i++){
-       document.getElementByClassName("main-img").src= imgArray[i];
-    }
+       
+       document.getElementById("main-img").src= imgArray[imgIndex]; 
  }
+
+ function updateIndexAndImage(){
+    if(imgIndex>=2){
+      imgIndex = 0;
+    }
+    else{
+      imgIndex++;
+    }
+    fun1();
+ }
+ 
+ setInterval(updateIndexAndImage,5000);
