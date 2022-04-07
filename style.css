@@ -209,22 +209,73 @@
 
 .ham-icon{
     background-color: aquamarine;
-    width: 40px;
-    height:40px;
     margin-top:40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding:10px;
+    padding:1%;
     margin-bottom: 60px;
     margin-left: 60px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    width:40px;
 }
-.ham-line{
-    width: 80%;
-    height:2px;
-    background-color: black;
+.ham-line1{
+    position: absolute;
+    width:30px;
+    border-top: 4px solid black;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all ease 0.5s;
 }
+.ham-line2{
+    border-top: 4px solid black;
+    width:30px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+}
+.ham-line3{
+    border-top: 4px solid black;
+    width:30px;
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translate(-50%,-100%);
+    transition: all ease 0.5s;
+}
+
+.ham-line4{
+    border-top: 4px solid black;
+    width:30px;
+    position: absolute; 
+    top:100%;
+    left:50%;      
+    transform: translate(-50%);
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.ham-icon:hover .ham-line1{
+    top:0%;
+    opacity:0;
+}
+.ham-icon:hover .ham-line2{
+    top:25%;
+}
+
+.ham-icon:hover .ham-line3{
+    top:50%;
+}
+
+.ham-icon:hover .ham-line4{
+    top:67%;
+    opacity: 1;
+}
+
 .pictures-box{
     padding-left: 60px;
     padding-right: 60px;
