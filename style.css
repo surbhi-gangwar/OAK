@@ -336,10 +336,11 @@
     align-items: center;
 }
 .wrapper input{
-    padding:8px;
+    padding:8px 13px 8px 8px;
     border-radius: 4px;
     border: 2px solid aquamarine;
     width:100%;
+    outline: none;
 }
 .wrapper button{
     background-color: aquamarine;
@@ -347,6 +348,7 @@
     border-radius: 4px;
     padding:10px 10px;
     color:white;  
+    cursor: pointer;
 }
 .footer{
     background-color: rgb(216, 215, 215);
@@ -388,4 +390,8 @@
     font-size: 15px;
     padding-left:2%;
     padding-right: 2%;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color: aquamarine;
 }
