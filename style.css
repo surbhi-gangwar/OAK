@@ -5,6 +5,40 @@
 .container1{
     padding: 30px 70px;
 }
+.img-box{
+    position: relative;
+}
+.bg-text{
+    position: absolute;
+    color: black;
+    top : 40%;
+    left: 10%;
+    font-family: "Saira Stencil One";
+    font-size: 60px; 
+}
+.bg-text span{
+    font-family: "Josefin Slab";
+    background-color: aquamarine;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding: 8px 0 2px 2px;
+}
+.bg-changing-text{
+    position: absolute;
+    color: black;
+    top:55%;
+    left: 10%;
+    font-family: "electrolize";
+    font-size: 40px;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation : changeText 5s ease-in-out infinite;
+}
+@keyframes changeText {
+    0%{width : 21%;}
+    50%{width : 0%;}
+    100%{width : 21%;}
+}
 .header1{
     display: flex;
     justify-content: space-between;
@@ -70,39 +104,67 @@
     width: 0;
     padding:45px 40px 50px 40px; 
     z-index:4;
-    
-    transition: all ease 0.5s;
+    transition: all ease 0.5s;   
 }
 
 .menu-bar-header{
     display: flex;
     justify-content: space-between;
+    
 }
+
+.search-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#input-box{
+    cursor: pointer;
+    font-size: 25px;
+    border:2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    font-family: courier;
+    width: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
 .circle{
     background-color:transparent;
-    height:40px;
-    width: 40px;
+    height:30px;
+    width: 30px;
     border-radius: 100%;
     border: 3px solid white;
-}
-.search-line-bottom{
-    width:2px;
-    height:20px;
-    background-color: white;
-    position:relative;
-    right:-100%;
-    transform: rotate(-45deg);
-    top:-11px;
-}
-.search-line-top{
-    width:2px;
-    height:20px;
-    background-color: white;
     position: relative;
-    top:-85px;
-    right:-40px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.bottom-line{
+    width:3px;
+    height:20px;
+    background-color: white;
+    position: absolute;
+    top:39px;
+    right:4px;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.top-line{
+    width:3px;
+    height:20px;
+    background-color: white;
+    position: absolute;
+    right:0;
+    top:-8px;
     transform: rotate(45deg);
     opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 .fa-xmark{
     color: white;
@@ -120,15 +182,30 @@
     color: white;
     list-style: none;
     padding-top: 2%;
-    padding-bottom: 2%;
     font-family: 'lato';
     font-size: 35px;
     cursor: pointer;
     text-transform: uppercase;
+    display: block;
 }
-.menu-item:hover{
+.menu-list ul span:hover{
     color:aquamarine;
 }
+
+.menu-bottom-icons i{
+    color:white;
+    font-size: 25px;
+    margin-top: 130px;
+    position: relative;
+    left:-10px;
+}
+.menu-bottom-text{
+    color:gray;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: roboto mono;
+}
+
 
 .container2{
     padding:30px 60px;
@@ -207,12 +284,31 @@
     padding:20px;
 }
 
+.header4{
+    margin-bottom: 60px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.slide-box ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'lato';
+    letter-spacing: 1px;
+}
+.slide-box{
+    position: absolute;
+    top:50%;
+    left:-554px;
+    transition: all 0.5s;
+    
+}
 .ham-icon{
     background-color: aquamarine;
     margin-top:40px;
     padding:1%;
-    margin-bottom: 60px;
-    margin-left: 60px;
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -321,6 +417,17 @@
 }
 .image:hover .overlay{
     bottom:30px;
+}
+.heart{
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.image:hover .heart{
+    opacity: 1;
 }
 .top-border{
     border-top: 5px solid black;

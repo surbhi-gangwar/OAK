@@ -8,7 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Orelega+One&family=Roboto+Mono:ital,wght@1,100&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Lato&family=Orelega+One&family=Roboto+Mono:ital,wght@1,100&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Josefin+Slab:wght@100&family=Lato&family=Orelega+One&family=Roboto+Mono:ital,wght@1,100&family=Saira+Stencil+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/173be59187.js" crossorigin="anonymous"></script>
+
     </head>
 <body>
 
@@ -26,28 +36,44 @@
             </div>
             <div class="img-box">
                 <img id="main-img" src="./images/background1.webp">
+                <div class="bg-text">PURE <span>ELEGANCE</span></div>
+                <div class="bg-changing-text" >AWESOME THEME</div>
             </div>
             
             <div class="menu-bar">
                 <div class="menu-bar-header">
                     <div class="cross" onclick="Hide()"><i class="fa-solid fa-xmark"></i></div>
-                    <div class="search">
-                        <div class="circle"></div>
-                        <div class="search-line-bottom"></div>
-                        <div class="search-line-top"></div>
+                    
+                    <div class="search-container">
+                        <div class="circle" onclick="fxn2()"></div> 
+                        <input type="text" id="input-box" placeholder="YOUR TEXT HERE..." onclick="fxn2()" ></input>
+                        
+                        <div class="top-line" onclick="fxn2()" ></div>
+                        <div class="bottom-line" onclick="fxn2()"></div> 
                     </div>
+                    
+                    
+                    
                 </div>
                 <div class="menu-list">
                     <ul>
-                        <li class="menu-item1 menu-item">home</li>
-                        <li class="menu-item2 menu-item">about</li>
-                        <li class="menu-item3 menu-item">portfolio</li>
-                        <li class="menu-item4 menu-item">blog</li>
-                        <li class="menu-item5 menu-item">contact</li>
+                        <li class="menu-item1 menu-item" onclick="Hide()"><span>home</span></li>
+                        <li class="menu-item2 menu-item" onclick="Hide()"><span>about</span></li>
+                        <li class="menu-item3 menu-item" onclick="Hide()"><span>portfolio</span></li>
+                        <li class="menu-item4 menu-item" onclick="Hide()"><span>blog</span></li>
+                        <li class="menu-item5 menu-item" onclick="Hide()"><span>contact</span></li>
                     </ul>
                 </div>
                 <div class="menu-bottom-icons">
-                 
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-flickr"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div class="menu-bottom-text">
+                    T: 003 124 115<br>E: @info.mail
                 </div>
             </div>
         </div>
@@ -107,14 +133,22 @@
         <div class="container4">
             <div class="text3"><span class="underline">our</span>  work</div>
             <p id="text3">Laborious to obtain some advantage from it</p>
-
-            <div class="ham-icon">
-                <div class="ham-line ham-line1"></div>
-                <div class="ham-line ham-line2"></div>
-                <div class="ham-line ham-line3"></div>
-                <div class="ham-line ham-line4"></div>
+            <div class="header4">
+                <div class="ham-icon" onclick="slide()">
+                     <div class="ham-line ham-line1"></div>
+                     <div class="ham-line ham-line2"></div>
+                     <div class="ham-line ham-line3"></div>
+                     <div class="ham-line ham-line4"></div>
+                </div>
+                <div class="slide-box">
+                    <ul>
+                         <li>All</li>
+                         <li>Branding</li>
+                         <li>Web Design </li>
+                         <li>Graphic Design</li>
+                    </ul>     
+                </div>
             </div>
-
             <div class="pictures-box">
                 <div class="grid-container">
                               
@@ -123,7 +157,7 @@
                         <div class="border right-border"></div>
                         <div class="border bottom-border"></div>
                         <div class="border left-border"></div>
-                        
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -134,6 +168,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -143,6 +178,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -152,6 +188,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -161,6 +198,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -170,6 +208,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -179,6 +218,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -188,7 +228,7 @@
                     </div>
 
                     <div class="image">
-
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
@@ -198,6 +238,7 @@
                     </div>
 
                     <div class="image">
+                        <div class="heart"><i class="fa-regular fa-heart"></i><br>60</div>
                         <div class="overlay">
                             <div class="title">style fashion</div>
                             <p class="description">New Bag & Style Fashion</p>
