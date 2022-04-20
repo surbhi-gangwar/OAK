@@ -5,6 +5,22 @@
 .container1{
     padding: 30px 70px;
 }
+.scroll-to-top{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    z-index: 10;
+}
+.fa-arrow-up{
+    color:white;
+}
 .img-box{
     position: relative;
 }
@@ -96,7 +112,6 @@
 
 .menu-bar{ 
     background-color: black;
-    opacity: 1;
     height: 100%;
     position: fixed;
     top:0;
