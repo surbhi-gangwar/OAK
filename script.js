@@ -6,8 +6,23 @@ menu.style.right=0;
 
 function Hide(){
    const menuhide= document.querySelector(".menu-bar");
+   const inputBox = document.querySelector("#input-box");
+   const circle = document.querySelector(".circle");
+   const bottomLine = document.querySelector(".bottom-line");
+   const topLine = document.querySelector(".top-line");
    menuhide.style.width=0;
    menuhide.style.right="-80px";
+   circle.style.opacity = "1";
+   inputBox.style.width = "0";
+   inputBox.style.opacity = "0";
+   topLine.style.opacity = "0";
+   bottomLine.style.top = "39px";
+   bottomLine.style.right = "4px";
+   inputBox.style.transition = "all 0.5s";
+   circle.style.transition = "all 0.5s";
+   bottomLine.style.transition = "all 0.5s";
+   topLine.style.transition = "all 0.5s";
+
 }
 const imgArray = ["./images/background1.webp",
 "./images/background2.jpg",
